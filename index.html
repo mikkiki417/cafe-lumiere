@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Cafe Lumière - 光あふれる、やさしい時間。" />
+  <title>Cafe Lumière | TOKYO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <div class="hero__veil"></div>
+    <div class="topbar wrap">
+      <a class="brand" href="#home" aria-label="Cafe Lumière home">
+        <span class="brand__script">Cafe Lumière</span>
+        <span class="brand__sub">TOKYO</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#access">ACCESS</a>
+        <a href="#news">NEWS</a>
+        <a href="#access">CONTACT</a>
+        <a class="nav__icon" href="#gallery" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="nav__icon" href="#access" aria-label="Location">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.7 6-12A6 6 0 0 0 6 9c0 6.3 6 12 6 12Z"/><circle cx="12" cy="9" r="2.1"/></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="hero__copy wrap">
+      <p class="hero__lead">光あふれる、<br>やさしい時間。</p>
+      <p class="hero__text">素材にこだわったおいしい食事と<br>心地よい空間で、ほっと一息つきませんか？</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about section" id="about">
+      <div class="about__inner wrap">
+        <div class="about__photo arch-photo">
+          <img src="assets/about.jpg" alt="木の温もりを感じるカフェ店内" />
+        </div>
+        <div class="about__content">
+          <p class="script-heading">About</p>
+          <h2>日常の中に、特別なひとときを。</h2>
+          <p>Cafe Lumièreは、フランス語で「光」を意味します。<br>あたたかな光が差し込む空間で、<br>こだわりのコーヒーや季節の料理をお楽しみください。<br>おひとりでも、大切な人と一緒でも、<br>皆さまの心がほっとする場所でありたいと思っています。</p>
+          <a class="button" href="#menu">VIEW MORE</a>
+        </div>
+        <svg class="leaf" viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M24 96C45 77 63 56 78 27M44 77c-13 2-18 8-22 16M54 66c-12-2-19 1-25 8M64 53c-8-7-15-7-22-5M73 40c-5-8-11-11-18-11M59 63c9 0 17 3 22 10M68 50c10-1 17 1 24 6M76 36c8-2 15-1 21 3"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="wrap">
+        <div class="section-title">
+          <p class="script-heading">Menu</p>
+          <span></span>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/coffee.jpg" alt="ラテアートのコーヒー" />
+            <h3>COFFEE</h3>
+            <p>こだわりの豆で丁寧に淹れた<br>香り高いコーヒー。</p>
+          </article>
+          <article class="menu-card">
+            <img src="assets/lunch.jpg" alt="季節野菜のランチプレート" />
+            <h3>LUNCH</h3>
+            <p>季節の食材を使った<br>からだにやさしいランチ。</p>
+          </article>
+          <article class="menu-card">
+            <img src="assets/sweets.jpg" alt="ケーキとアイスクリームのデザート" />
+            <h3>SWEETS</h3>
+            <p>パティシエ手作りの<br>季節のスイーツ。</p>
+          </article>
+          <article class="menu-card">
+            <img src="assets/drink.jpg" alt="レモンとハーブの爽やかなドリンク" />
+            <h3>DRINK</h3>
+            <p>ハーブティーや自家製ドリンクなど、<br>豊富にご用意しています。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="info section" id="news">
+      <div class="info__grid wrap">
+        <section class="news-panel">
+          <div class="panel-heading">
+            <p class="script-heading">News</p>
+            <a href="#news">VIEW ALL</a>
+          </div>
+          <ul class="news-list">
+            <li><time datetime="2024-05-01">2024.05.01</time><span>季節のおすすめメニューが新しくなりました</span></li>
+            <li><time datetime="2024-04-15">2024.04.15</time><span>ゴールデンウィークの営業について</span></li>
+            <li><time datetime="2024-04-01">2024.04.01</time><span>4月の営業カレンダーを更新しました</span></li>
+          </ul>
+        </section>
+
+        <section class="instagram-panel" id="gallery">
+          <div class="panel-heading panel-heading--stack">
+            <p class="script-heading">Instagram</p>
+            <span>@cafe_lumiere_tokyo</span>
+          </div>
+          <div class="insta-grid">
+            <img src="assets/insta1.jpg" alt="コーヒーとチーズケーキ" />
+            <img src="assets/insta2.jpg" alt="自家製レモンソーダ" />
+            <img src="assets/insta3.jpg" alt="チーズケーキとコーヒー" />
+            <img src="assets/insta4.jpg" alt="チーズケーキとバニラアイス" />
+            <img src="assets/insta5.jpg" alt="季節のランチプレート" />
+            <img src="assets/insta6.jpg" alt="ラテアート" />
+          </div>
+        </section>
+
+        <section class="access-panel" id="access">
+          <p class="script-heading">Access</p>
+          <div class="access-wrap">
+            <div class="access-copy">
+              <p>〒150-0001<br>東京都渋谷区神宮前 1-2-3</p>
+              <p>営業時間&nbsp; 8:00 - 18:00（L.O. 17:30）<br>定休日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月曜日<br>TEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03-1234-5678</p>
+              <a class="button button--small" href="#access">MAPを見る</a>
+            </div>
+            <div class="map-card" aria-label="店舗周辺のイメージマップ">
+              <img src="assets/map.png" alt="Cafe Lumière 周辺地図" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
