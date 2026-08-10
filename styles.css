@@ -135,6 +135,7 @@ button { font: inherit; }
   background: rgba(180,85,63,.14); border-radius: 5px; z-index: -1;
 }
 .cal-table .is-temp .mk { color: #b4553f; }
+.cal-table .mk--temp { font-size: 6.5px; letter-spacing: 0; white-space: nowrap; }
 
 .cal-legend { list-style: none; display: flex; justify-content: center; gap: 26px; margin: 20px 0 0; padding: 0; }
 .cal-legend li { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: .04em; }
