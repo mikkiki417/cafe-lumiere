@@ -88,6 +88,61 @@ button { font: inherit; }
 .menu-card h3 { margin: 13px 0 2px; font-family: var(--sans); font-size: 12px; letter-spacing: .14em; font-weight: 500; }
 .menu-card p { margin: 0; font-size: 10px; line-height: 1.9; letter-spacing: .04em; }
 
+/* CALENDAR */
+.calendar { background: linear-gradient(180deg, #f6f1ea 0%, #efe7dc 100%); padding: 62px 0 70px; overflow: hidden; }
+.calendar__bg {
+  position: absolute; inset: 0;
+  background: url("assets/calendar.jpg") center top / cover no-repeat;
+  opacity: .12; filter: blur(1px);
+  pointer-events: none;
+}
+.calendar__inner { position: relative; z-index: 1; text-align: center; }
+.calendar .section-title { margin-bottom: 14px; }
+.calendar__lead { margin: 0 0 10px; font-size: 22px; font-weight: 500; letter-spacing: .1em; color: var(--brown-dark); }
+.calendar__note { margin: 0 auto 30px; font-size: 12px; line-height: 1.9; color: var(--ink); }
+
+.cal-card {
+  width: min(560px, 100%); margin: 0 auto;
+  background: rgba(255,255,255,.9);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 30px 30px 24px;
+  box-shadow: 0 18px 45px -28px rgba(80,60,40,.5);
+  backdrop-filter: blur(2px);
+}
+.cal-head { margin-bottom: 16px; }
+.cal-month { margin: 0; font-size: 30px; letter-spacing: .04em; color: var(--brown-dark); }
+.cal-month span { font-size: 17px; margin: 0 1px; }
+.cal-month-en { margin: 6px 0 0; font-family: var(--sans); font-size: 10px; letter-spacing: .34em; color: var(--gold); }
+
+.cal-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cal-table th { padding: 8px 0; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--ink); border-bottom: 1px solid var(--gold); }
+.cal-table td { height: 46px; border-bottom: 1px solid #ece3d8; font-size: 15px; vertical-align: middle; position: relative; }
+.cal-table .d { display: inline-block; line-height: 1; }
+.cal-table .is-sun, .cal-table th.is-sun { color: #b4553f; }
+.cal-table .is-sat, .cal-table th.is-sat { color: #4a6b93; }
+.cal-table .is-empty { background: transparent; }
+.cal-table .is-closed { color: #a8836a; }
+.cal-table .is-closed .d { position: relative; }
+.cal-table .is-closed::after {
+  content: ""; position: absolute; inset: 5px 8px;
+  background: rgba(190,166,128,.16); border-radius: 5px; z-index: -1;
+}
+.cal-table .mk { display: block; margin-top: 2px; font-family: var(--sans); font-size: 8px; letter-spacing: .05em; color: #b08a5a; }
+
+.cal-legend { list-style: none; display: flex; justify-content: center; gap: 26px; margin: 20px 0 0; padding: 0; }
+.cal-legend li { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: .04em; }
+.cal-legend .dot { width: 13px; height: 13px; border-radius: 4px; }
+.cal-legend .dot--open { border: 1px solid var(--line); background: #fff; }
+.cal-legend .dot--closed { background: rgba(190,166,128,.28); border: 1px solid rgba(176,138,90,.5); }
+
+.cal-hours { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 8px 30px; margin: 30px 0 0; }
+.cal-hours div { display: inline-flex; align-items: baseline; gap: 12px; }
+.cal-hours dt { font-family: var(--sans); font-size: 10px; letter-spacing: .16em; color: var(--gold); }
+.cal-hours dd { margin: 0; font-size: 13px; letter-spacing: .04em; }
+.calendar__ig { margin: 18px 0 0; font-size: 11px; color: var(--ink); }
+.calendar__ig a { color: #6c4937; border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
 /* INFO */
 .info { background: #fff; padding: 36px 0 50px; }
 .info__grid { display: grid; grid-template-columns: 1.08fr .92fr 1.27fr; gap: 0; }
@@ -154,6 +209,11 @@ button { font: inherit; }
 }
 
 @media (max-width: 540px) {
+  .calendar { padding: 48px 0 54px; }
+  .cal-card { padding: 22px 16px 20px; }
+  .cal-month { font-size: 26px; }
+  .cal-table td { height: 42px; font-size: 14px; }
+  .cal-hours { flex-direction: column; gap: 8px; }
   .hero { height: 650px; min-height: 650px; background-position: 58% center; }
   .hero__lead { margin-left: 0; font-size: 34px; line-height: 1.58; }
   .hero__text { margin-left: 0; font-size: 12px; line-height: 1.95; }

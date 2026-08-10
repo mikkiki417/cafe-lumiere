@@ -22,6 +22,7 @@
 
       <nav class="nav" aria-label="メインナビゲーション">
         <a href="#home">HOME</a>
+        <a href="#calendar">CALENDAR</a>
         <a href="#about">ABOUT</a>
         <a href="#menu">MENU</a>
         <a href="#gallery">GALLERY</a>
@@ -44,6 +45,77 @@
   </header>
 
   <main>
+    <section class="calendar section" id="calendar">
+      <div class="calendar__bg" aria-hidden="true"></div>
+      <div class="wrap calendar__inner">
+        <div class="section-title">
+          <p class="script-heading">Calendar</p>
+          <span></span>
+        </div>
+        <h2 class="calendar__lead">営業カレンダー</h2>
+        <p class="calendar__note">定休日は毎週月曜日です。<br>祝日や季節により変更する場合がございます。</p>
+
+        <div class="cal-card">
+          <div class="cal-head">
+            <p class="cal-month">2026<span>年</span>8<span>月</span></p>
+            <p class="cal-month-en">AUGUST 2026</p>
+          </div>
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th class="is-sun">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="is-sat">土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td>
+                <td class="is-sat"><span class="d">1</span></td>
+              </tr>
+              <tr>
+                <td class="is-sun"><span class="d">2</span></td>
+                <td class="is-closed"><span class="d">3</span><span class="mk">休</span></td>
+                <td><span class="d">4</span></td><td><span class="d">5</span></td><td><span class="d">6</span></td><td><span class="d">7</span></td>
+                <td class="is-sat"><span class="d">8</span></td>
+              </tr>
+              <tr>
+                <td class="is-sun"><span class="d">9</span></td>
+                <td class="is-closed"><span class="d">10</span><span class="mk">休</span></td>
+                <td><span class="d">11</span></td><td><span class="d">12</span></td><td><span class="d">13</span></td><td><span class="d">14</span></td>
+                <td class="is-sat"><span class="d">15</span></td>
+              </tr>
+              <tr>
+                <td class="is-sun"><span class="d">16</span></td>
+                <td class="is-closed"><span class="d">17</span><span class="mk">休</span></td>
+                <td><span class="d">18</span></td><td><span class="d">19</span></td><td><span class="d">20</span></td><td><span class="d">21</span></td>
+                <td class="is-sat"><span class="d">22</span></td>
+              </tr>
+              <tr>
+                <td class="is-sun"><span class="d">23</span></td>
+                <td class="is-closed"><span class="d">24</span><span class="mk">休</span></td>
+                <td><span class="d">25</span></td><td><span class="d">26</span></td><td><span class="d">27</span></td><td><span class="d">28</span></td>
+                <td class="is-sat"><span class="d">29</span></td>
+              </tr>
+              <tr>
+                <td class="is-sun"><span class="d">30</span></td>
+                <td class="is-closed"><span class="d">31</span><span class="mk">休</span></td>
+                <td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="cal-legend">
+            <li><span class="dot dot--open"></span>営業日</li>
+            <li><span class="dot dot--closed"></span>定休日</li>
+          </ul>
+        </div>
+
+        <dl class="cal-hours">
+          <div><dt>営業時間</dt><dd>8:00 - 18:00（L.O. 17:30）</dd></div>
+          <div><dt>定休日</dt><dd>毎週月曜日</dd></div>
+        </dl>
+        <p class="calendar__ig">最新の営業情報は Instagram <a href="#gallery">@cafe_lumiere_tokyo</a> でご確認いただけます。</p>
+      </div>
+    </section>
+
     <section class="about section" id="about">
       <div class="about__inner wrap">
         <div class="about__photo arch-photo">
