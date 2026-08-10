@@ -129,12 +129,19 @@ button { font: inherit; }
   background: rgba(190,166,128,.16); border-radius: 5px; z-index: -1;
 }
 .cal-table .mk { display: block; margin-top: 2px; font-family: var(--sans); font-size: 8px; letter-spacing: .05em; color: #b08a5a; }
+.cal-table .is-temp { color: #b4553f; }
+.cal-table .is-temp::after {
+  content: ""; position: absolute; inset: 5px 8px;
+  background: rgba(180,85,63,.14); border-radius: 5px; z-index: -1;
+}
+.cal-table .is-temp .mk { color: #b4553f; }
 
 .cal-legend { list-style: none; display: flex; justify-content: center; gap: 26px; margin: 20px 0 0; padding: 0; }
 .cal-legend li { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: .04em; }
 .cal-legend .dot { width: 13px; height: 13px; border-radius: 4px; }
 .cal-legend .dot--open { border: 1px solid var(--line); background: #fff; }
 .cal-legend .dot--closed { background: rgba(190,166,128,.28); border: 1px solid rgba(176,138,90,.5); }
+.cal-legend .dot--temp { background: rgba(180,85,63,.22); border: 1px solid rgba(180,85,63,.5); }
 
 .cal-hours { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 12px 36px; margin: 34px 0 0; }
 .cal-hours div { display: inline-flex; align-items: baseline; gap: 14px; }
